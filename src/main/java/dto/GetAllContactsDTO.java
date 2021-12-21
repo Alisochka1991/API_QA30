@@ -2,14 +2,14 @@ package dto;
 
 import lombok.*;
 
+import java.util.List;
+
 @AllArgsConstructor
 @Getter
 @Setter
 @ToString
 @Builder
-public class ErrorDto {
-    int code;
-    String details;
-    String message;
 
+public class GetAllContactsDTO {
+    List <ContactDTO> contacts;
 }
